@@ -1,9 +1,10 @@
-# General
-
-## Website Functions
-
+# Design Specification
 
 ## Website Visual Structure
+
+A personal portfolio website that has an "About Me" section, an "Academic Experiences" section, a "Projects Section", and a "Contacts Section", all of which are separate pages which can be navigated to from the home page via hyperlinks.
+
+I want to be able to 
 
 ## Color Pallette
 
