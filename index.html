@@ -15,6 +15,13 @@
 <body class="fonts-loading">
     <header class="site-header">
         <h1>Tauna Kirk<br>Student, Engineer</h1>
+        <div class="header-widget" id="header-widget" aria-live="polite">
+            <span class="header-widget-day" id="widget-day"></span>
+            <span class="header-widget-sep">|</span>
+            <span class="header-widget-time" id="widget-time"></span>
+            <span class="header-widget-sep">|</span>
+            <span class="header-widget-temp" id="widget-temp"></span>
+        </div>
     </header>
 
     <main class="page-wrapper">
@@ -22,6 +29,7 @@
             <nav>
                 <a href="academic.html">Academic Experiences</a>
                 <a href="projects.html">Project Portfolio</a>
+                <a href="blog.html">Blog</a>
             </nav>
         </aside>
 
@@ -31,25 +39,29 @@
             </div>
             <div class="about-section">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    My name is Tauna Kirk and I am currently pursuing my Mechanical Engineering degree at Salt Lake Community College. I will graduate with my associates at SLCC and then transfer to the University of Utah and finish with my Bachelors in Mechanical Engineering. I currently work at Black Diamond as a Quality Assurance Technician. I test all products that Black Diamond manufactures for quality such as durability, appearance, and performance. 
+                </p>
+                <p>
+                    I partake in quite a few hobby’s when I have the time away from full time school and work. I enjoy hiking, camping, fishing, and reading. I am my car’s lifeline. I have replaced spark plugs, coolant hoses, air filters, and my car's mass airflow sensor. I also enjoy climbing. I am currently working on 5.10b on top rope. I plan on pursuing lead climbing and more exposure to outdoor climbing. I enjoy watching movies and solving mechanical problems with my boyfriend. 
+                </p>
+                <p>
+                    I have been exposed to manufacturing and engineering for about 8 years. I enjoyed the hands-on work approach and the problem solving with machines. I have a career desire that I hope to pursue once I am at the University of Utah. I want to use mechanical engineering to recreate prehistoric life, more importantly, dinosaurs. I want to take what paleontologists have found and create a skeleton, muscle, and skin to create the dinosaur or organism. From there I would biomechanically solve questions or theories on how that organism ate, walked, flew, swam, etc. I foresee that future technologies will unlock new creative possibilities, and I look forward to shaping those advances. 
+                </p>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>[CONTACT INFO HERE]</p>
+        <div class="footer-links">
+            <a href="mailto:taunakirk7@gmail.com">Email</a>
+            <span class="header-widget-sep">|</span>
+            <a href="https://www.linkedin.com/in/tauna-kirk-1ab45523b/">LinkedIn</a>
+            <span class="header-widget-sep">|</span>
+            <a href="tel:+13852462831">Phone Number - (385) 246-2831</a>
+        </div>
     </footer>
 
-    <script>
-        document.fonts.ready.then(function() {
-            document.body.classList.remove('fonts-loading');
-            document.body.classList.add('fonts-loaded');
-        });
-        setTimeout(function() {
-            document.body.classList.remove('fonts-loading');
-            document.body.classList.add('fonts-loaded');
-        }, 3000);
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

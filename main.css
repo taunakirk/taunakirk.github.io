@@ -49,6 +49,39 @@ body {
     color: #f08051;
 }
 
+.header-widget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--green);
+}
+
+.header-widget span {
+    display: inline-block;
+}
+
+.header-widget .header-widget-day {
+    font-weight: 600;
+    color: var(--green);
+}
+
+.header-widget .header-widget-time {
+    font-variant-numeric: tabular-nums;
+}
+
+.header-widget .header-widget-temp {
+    color: var(--green);
+    font-weight: 500;
+}
+
+.header-widget .header-widget-sep {
+    opacity: 0.6;
+    user-select: none;
+}
+
 /* Main layout */
 .page-wrapper {
     display: flex;
@@ -74,19 +107,19 @@ body {
 .sidebar-nav a {
     display: block;
     padding: 1rem 1.25rem;
-    color: var(--neutral-gray);
+    color: white;
     text-decoration: none;
     font-weight: 500;
-    background-color: var(--bg-secondary);
-    border: 2px solid var(--neutral-gray);
+    background-color: var(--orange-light);
+    border: 2px solid var(--orange);
     border-radius: 6px;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .sidebar-nav a:hover {
-    background-color: var(--orange-light);
+    background-color: var(--green-light);
     color: var(--bg-primary);
-    border-color: var(--orange);
+    border-color: var(--green);
 }
 
 /* Main content area */
@@ -169,3 +202,22 @@ body {
     font-size: 0.9rem;
     color: var(--neutral-gray);
 }
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--orange);
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
+
