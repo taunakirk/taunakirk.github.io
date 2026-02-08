@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tauna Kirk | Personal Portfolio</title>
     <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/pacifico/v23/FwZY7-Qmy14u9lezJ-6H6Mk.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body class="fonts-loading">
     <header class="site-header">
-        <h1>Tauna Kirk</h1>
+        <h1>Tauna Kirk<br>Student, Engineer</h1>
     </header>
 
     <main class="page-wrapper">
@@ -21,8 +27,7 @@
 
         <section class="main-content">
             <div class="image-placeholder">
-                <img src="" alt="Photo of Tauna Kirk" class="owner-image">
-                <span class="placeholder-text">[IMAGE OF WEBSITE OWNER]</span>
+                <img src="media/images/tauna.png" alt="Photo of Tauna Kirk" class="owner-image">
             </div>
             <div class="about-section">
                 <h2>About Me</h2>
@@ -35,5 +40,16 @@
     <footer class="site-footer">
         <p>[CONTACT INFO HERE]</p>
     </footer>
+
+    <script>
+        document.fonts.ready.then(function() {
+            document.body.classList.remove('fonts-loading');
+            document.body.classList.add('fonts-loaded');
+        });
+        setTimeout(function() {
+            document.body.classList.remove('fonts-loading');
+            document.body.classList.add('fonts-loaded');
+        }, 3000);
+    </script>
 </body>
 </html>
