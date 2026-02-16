@@ -41,6 +41,14 @@ body {
     text-align: center;
 }
 
+.personal-logo {
+    max-width: 200px;
+    max-height: 200px;
+    border-width: 5px;
+    border-style: inset;
+    border-color: var(--orange);
+}
+
 .site-header h1 {
     margin: 0;
     font-family: 'Pacifico', cursive;
