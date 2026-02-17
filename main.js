@@ -66,3 +66,33 @@ function initHeaderWidget() {
 }
 
 initHeaderWidget();
+
+function initClassRibbons() {
+    var list = document.querySelector('.classes-ribbons');
+    if (!list) return;
+
+    var tabs = list.querySelectorAll('.class-ribbon-tab');
+    tabs.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            var detailsId = btn.getAttribute('aria-controls');
+            var details = detailsId ? document.getElementById(detailsId) : null;
+
+            if (details) {
+                if (expanded) {
+                    btn.setAttribute('aria-expanded', 'false');
+                    details.hidden = true;
+                } else {
+                    btn.setAttribute('aria-expanded', 'true');
+                    details.hidden = false;
+                }
+            }
+        });
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initClassRibbons);
+} else {
+    initClassRibbons();
+}

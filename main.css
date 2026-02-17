@@ -135,9 +135,79 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1rem;
     overflow-y: auto;
+    min-height: 0;
+}
+
+.classes-ribbons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 560px;
+    padding: 0;
+    margin: 0;
+}
+
+.class-ribbon-item {
+    list-style-type: none;
+    margin: 0 0 15px 0;
+}
+
+.class-ribbon-item:last-child {
+    margin-bottom: 0;
+}
+
+.class-ribbon-tab {
+    display: block;
+    width: 100%;
+    border: 10px solid var(--orange);
+    border-style: ridge;
+    font-weight: 600;
+    color: var(--bg-primary);
+    background-color: var(--orange-light);
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    font: inherit;
+    transition: background-color 0.2s, filter 0.2s;
+}
+
+.class-ribbon-tab:hover {
+    background-color: var(--green-light);
+}
+
+.class-ribbon-tab[aria-expanded="true"] {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.class-ribbon-details {
+    padding: 1rem 1.25rem;
+    background-color: var(--bg-primary);
+    border: 2px solid var(--orange);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    color: var(--neutral-gray);
+    line-height: 1.6;
+}
+
+.class-ribbon-details p {
+    margin: 0 0 0.5rem 0;
+}
+
+.class-ribbon-details p:last-child {
+    margin-bottom: 0;
+}
+
+.class-ribbon-details a {
+    text-decoration: none;
+    color: var(--orange-light);
+}
+
+.class-ribbon-details a:hover {
+    color: var(--green-light)
 }
 
 /* Image placeholder */
@@ -194,6 +264,10 @@ body {
 
 .about-section p:last-child {
     margin-bottom: 0;
+}
+
+.assignment-question {
+    text-align: left;
 }
 
 /* Footer */
